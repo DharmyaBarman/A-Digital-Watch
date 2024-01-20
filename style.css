@@ -1,0 +1,84 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+#main{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(39, 42, 48);
+    color: white;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#hours,#minutes,#seconds,#ampm{
+    width: 150px;
+    height: 150px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: rgba(248, 250, 251, 0.5) 0px 1px 2px 0px,
+     rgba(243, 244, 245, 0.15) 0px 2px 6px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgba(163, 200, 219, 0.5);
+}
+
+#hours{
+    color: red;
+    position: relative;
+}
+#hours::before{
+    content: 'HOURS';
+    font-size: 20px;
+    position: absolute;
+    bottom: 5%;
+    color: aliceblue;
+    font-weight: 800;
+}
+#minutes{
+    color: yellow;
+    position: relative;
+}
+#minutes::before{
+    content: 'MINUTES';
+    font-size: 20px;
+    position: absolute;
+    bottom: 5%;
+    color: aliceblue;
+    font-weight: 800;
+}
+#seconds{
+    color: green;
+    position: relative;
+}
+#seconds::before{
+    content: 'SECONDS';
+    font-size: 20px;
+    position: absolute;
+    bottom: 5%;
+    color: aliceblue;
+    font-weight: 800;
+}
+
+#ampm{
+    font-size: 50px;
+    position: relative;
+}
+#ampm::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 10%;
+}
